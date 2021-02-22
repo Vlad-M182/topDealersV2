@@ -54,6 +54,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	--black-col: #000;
 	--white-col: #fff;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: var(--black-col);
 	color: var(--white-col);
@@ -296,6 +299,9 @@ body.lock {
 	width: 100%;
 	height: auto;
 }
+.main-slider__image {
+	display: none;
+}
 .swiper-button-next, .swiper-button-prev {
 	position: absolute;
 	top: 50%;
@@ -403,8 +409,7 @@ body.lock {
 }
 .result {
 	padding: 100px 0 95px 0;
-	background: url("../images/result/bg.png") no-repeat;
-	/* background: radial-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 90%), url("../images/result/bg.jpg") center no-repeat;*/
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.6) 100%), url("../images/result/bg.png") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -440,6 +445,7 @@ body.lock {
 	position: relative;
 	padding: 66px 0;
 	max-height: 484px;
+	background-color: #0d0d0d;
 }
 .contact__bg {
 	position: absolute;
@@ -448,7 +454,7 @@ body.lock {
 	right: 0;
 	bottom: 0;
 	z-index: 2;
-	background: radial-gradient(at right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%);
+	background: radial-gradient(at right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 60%);
 }
 .contact__map-bg {
 	position: absolute;
@@ -500,7 +506,8 @@ body.lock {
 }
 .footer {
 	padding: 48px 0 41px 0;
-	background: url("../images/footer/bg.jpg") center no-repeat;
+	/* background: url("../images/footer/bg.png") center no-repeat; */
+	background: radial-gradient(at bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 60%), url("../images/footer/bg.jpg") center no-repeat;
 	background-size: cover;
 }
 .footer__nav {
@@ -643,7 +650,7 @@ body.lock {
 		padding: 66px 0 0 0;
 	}
 	.contact__bg {
-		background: linear-gradient(0deg, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 40%);
+		background: radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 85%);
 	}
 	.contact__body, .contact__form {
 		margin: 0 auto;
@@ -657,6 +664,14 @@ body.lock {
 	}
 }
 @media(max-width: 767px) {
+	.main-slider__video {
+		display: none;
+	}
+	.main-slider__image {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 	.left-text {
 		background: var(--black-col);
 	}
@@ -738,7 +753,7 @@ body.lock {
 		flex: 0 0 100%;
 	}
 	.contact__bg {
-		background: linear-gradient(0deg, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 50%);
+		background: radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 95%);
 	}
 	.footer__left {
 		display: flex;
