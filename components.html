@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/Logo.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Top Dealers - Components</title>
+</head>
+<body>
+	<!-- 
+		В секціях "left-text", "right-text" щоб змінити картинку потрібно:
+		1. для "left-text" або "right-text" і "left-text__img-shell" або "right-text__img-shell" відповідно добавити клас модифікатор ("main-car" не використовувати бо на головній сторінці пропаде картинка)
+		2. для нового класу добавити в стилі наступний стиль (прописати шлях до картинки з css файла):
+			- якщо картинка має бути ЗПРАВА від тексту "background: radial-gradient(at right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%), url("../images/block/2.png") right no-repeat;"
+			- якщо картинка має бути ЗЛІВА від тексту "background: radial-gradient(at left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%), url("../images/block/3.png") left no-repeat;"
+		3. для блока 
+			-"left-text__img-shell" добавити наступний стиль 
+			"background: radial-gradient(ellipse at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/3.png") center no-repeat;"
+			-"right-text__img-shell" добавити наступний стиль
+			"background: radial-gradient(ellipse at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/2.png") center no-repeat;"
+		(ці блоки мають з'являтися на ширинах екрана до 767px)
+
+		Для прикладу є три такі блоки, якщо вони не треба то з файла стилів "style.css" видалити зайві стилі (вони помічені так: /*.black-car .white-car видалити*/)
+	 -->
+	<section class="left-text red-car">
+		<div class="container-sm">
+			<div class="left-text__body">
+				<h2 class="left-text__title title2-italic">TOP - DEALERS </h2>
+				<div class="left-text__text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tristique ipsum egestas imperdiet. Quam tellus quis lacus velit lobortis in. Sed aenean lorem neque, arcu augue nec enim mattis vitae. Purus non non bibendum urna nullam tortor sit egestas ante. Aliquam sed faucibus cursus placerat. Viverra pellentesque sodales auctor vulputate sed elit. Quis fermentum sapien nec urna at sodales. Tempus scelerisque massa sollicitudin elit tortor tempus, vulputate in in.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="left-text__img-shell red-car"></div>
+	</section>
+	<section class="right-text black-car">
+		<div class="container-sm">
+			<div class="right-text__body">
+				<div class="right-text__content">
+					<h2 class="right-text__title title2-italic">TOP - DEALERS</h2>
+					<div class="right-text__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tristique ipsum egestas imperdiet. Quam tellus quis lacus velit lobortis in. Sed aenean lorem neque, arcu augue nec enim mattis vitae. Purus non non bibendum urna nullam tortor sit egestas ante. Aliquam sed faucibus cursus placerat. Viverra pellentesque sodales auctor vulputate sed elit. Quis fermentum sapien nec urna at sodales. Tempus scelerisque massa sollicitudin elit tortor tempus, vulputate in in.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-text__img-shell black-car"></div>
+	</section>
+	<section class="left-text white-car">
+		<div class="container-sm">
+			<div class="left-text__body">
+				<h2 class="left-text__title title2-italic">TOP - DEALERS </h2>
+				<div class="left-text__text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tristique ipsum egestas imperdiet. Quam tellus quis lacus velit lobortis in. Sed aenean lorem neque, arcu augue nec enim mattis vitae. Purus non non bibendum urna nullam tortor sit egestas ante. Aliquam sed faucibus cursus placerat. Viverra pellentesque sodales auctor vulputate sed elit. Quis fermentum sapien nec urna at sodales. Tempus scelerisque massa sollicitudin elit tortor tempus, vulputate in in.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="left-text__img-shell"></div>
+	</section>
+	<section class="center-text">
+		<div class="container-sm">
+			<div class="center-text__body">
+				<div class="center-text__content">
+					<h2 class="center-text__title title2-italic">TOP - DEALERS</h2>
+					<div class="center-text__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tristique ipsum egestas imperdiet. Quam tellus quis lacus velit lobortis in. Sed aenean lorem neque, arcu augue nec enim mattis vitae. Purus non non bibendum urna nullam tortor sit egestas ante. Aliquam sed faucibus cursus placerat. Viverra pellentesque sodales auctor vulputate sed elit. Quis fermentum sapien nec urna at sodales. Tempus scelerisque massa sollicitudin elit tortor tempus, vulputate in.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="center-text__image"></div>
+	</section>
+	<!-- Щоб змінити кількість колонок у "work" до блоку "work__items" дописати модифікатор "work__items-4" або "work__items-3" -->
+	<section class="work">
+		<div class="container-sm">
+			<div class="work__header">
+				<h2 class="work__title title2">МОЖЛИВОСТІ ДЕТЕЙЛІНГУ</h2>
+				<p class="work__subtitle">Сучасні технології захисту і догляду за вашим автомобілем</p>
+			</div>
+			<div class="work__items work__items-4">
+				<div class="work__item">
+					<img src="images/block/1.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Шкіра
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/2.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Кузов
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/3.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Скло
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/4.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Хром
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/5.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Диски
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/6.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Шини
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/7.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Приладова панель
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/8.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Килимові покриття
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="work">
+		<div class="container-sm">
+			<div class="work__header">
+				<h2 class="work__title title2">МОЖЛИВОСТІ ДЕТЕЙЛІНГУ</h2>
+				<p class="work__subtitle">Сучасні технології захисту і догляду за вашим автомобілем</p>
+			</div>
+			<div class="work__items work__items-3">
+				<div class="work__item">
+					<img src="images/block/9.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Шкіра
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/10.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Кузов
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/11.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Скло
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/12.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Хром
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/13.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Диски
+					</p>
+				</div>
+				<div class="work__item">
+					<img src="images/block/14.svg" alt="" class="work__item-image">
+					<p class="work__item-text">
+						Шини
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="result">
+		<h2 class="result__title title2">ЗАСЛУГИ. ДОСВІД. РЕЗУЛЬТАТ.</h2>
+		<div class="result__body">
+			<div class="result__item">
+				<div class="result__count">31</div>
+				<p class="result__text">Розроблено дизайнів</p>
+			</div>
+			<div class="result__item">
+				<div class="result__count">3</div>
+				<p class="result__text">Виконано робіт на експорт</p>
+			</div>
+			<div class="result__item">
+				<div class="result__count">151+</div>
+				<p class="result__text">Виконано проектів</p>
+			</div>
+			<div class="result__item">
+				<div class="result__count">1</div>
+				<p class="result__text">Атестованих фахівців</p>
+			</div>
+		</div>
+	</section>
+	<!-- Щоб змінити картинки у "we-work-right-text" і "we-work-left-text" блоках див. пункти для "left-text", "right-text" -->
+	<section class="we-work-right-text we-work1">
+		<div class="container-sm">
+			<div class="right-text__body">
+				<h2 class="we-work-right-text__title title2-italic">З ЧИМ МИ ПРАЦЮЄМО?</h2>
+				<div class="right-text__content">
+					<h2 class="right-text__title title2-italic">TOP - DEALERS</h2>
+					<div class="right-text__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tristique ipsum egestas imperdiet. Quam tellus quis lacus velit lobortis in. Sed aenean lorem neque, arcu augue nec enim mattis vitae. Purus non non bibendum urna nullam tortor sit egestas ante. Aliquam sed faucibus cursus placerat. Viverra pellentesque sodales auctor vulputate sed elit. Quis fermentum sapien nec urna at sodales. Tempus scelerisque massa sollicitudin elit tortor tempus, vulputate in in.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right-text__img-shell we-work1"></div>
+		</div>
+	</section>
+	<section class="we-work-left-text we-work2">
+		<div class="container-sm">
+			<div class="left-text__body">
+				<h2 class="we-work-left-text__title title2-italic">З ЧИМ МИ ПРАЦЮЄМО?</h2>
+				<div class="left-text__content">
+					<h2 class="left-text__title title2-italic">TOP - DEALERS</h2>
+					<div class="left-text__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique tristique ipsum egestas imperdiet. Quam tellus quis lacus velit lobortis in. Sed aenean lorem neque, arcu augue nec enim mattis vitae. Purus non non bibendum urna nullam tortor sit egestas ante. Aliquam sed faucibus cursus placerat. Viverra pellentesque sodales auctor vulputate sed elit. Quis fermentum sapien nec urna at sodales. Tempus scelerisque massa sollicitudin elit tortor tempus, vulputate in in.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="left-text__img-shell we-work2"></div>
+		</div>
+	</section>
+	<section class="protection">
+		<div class="protection__body">
+			<div class="protection__top">
+				<h2 class="protection__title title2">ЗАХИСНА ПЛІВКА</h2>
+				<p class="protection__subtitle">
+					Сучасні технології захисту і догляду за вашим автомобілем
+				</p>
+			</div>
+			<div class="protection__items">
+				<div class="protection__item">
+					<h3 class="protection__item-title">ЗАХИСТ ЛОБОВОГО 
+						СКЛА CLEARPLEX</h3>
+						<ul class="protection__item-list">
+							<li>
+								Захищає стікло від внутршніх пошкоджень
+							</li>
+							<li>
+								Можливість покриття антидощем
+							</li>
+							<li>
+								Знижує ймовірність заміни лобового скла
+							</li>
+							<li>
+								Збільшує термін життя датчиків
+							</li>
+							<li>
+								100% прозорість
+							</li>
+						</ul>
+				</div>
+				<div class="protection__item">
+					<h3 class="protection__item-title">АНТИВАНДАЛЬНИЙ ЗАХИСТ БОКОВИХ СТІКОЛ</h3>
+						<ul class="protection__item-list">
+							<li>
+								Ускладнює проникнення в автомобіль через скло
+							</li>
+							<li>
+								Збільшує міцність скла в 3-5 раз
+							</li>
+							<li>
+								Захищає від пошкоджень всередині салона
+							</li>
+							<li>
+								Сумісна з тонуючою плівкою
+							</li>
+							<li>
+								100% прозорість
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- у блоці "block-with-title" можна зробити ще один компонент "block-with-title__body" і вибирати той який треба з прикладів нище -->
+	<section class="block-with-title">
+		<div class="container">
+			<div class="block-with-title__top">
+				<h1 class="block-with-title__title">ДЕТЕЙЛІНГ</h1>
+				<p class="block-with-title__subtitle">
+					Оберіть пакет послуг
+				</p>
+			</div>
+			<div class="block-with-title__body">
+				<div class="block-with-title__body-item block-with-title__body-item-standart">
+					<h3 class="block-with-title__body-title">STANDART</h3>
+					<button class="btn" type="button">Price</button>
+					<a class="btn" href="#">Зв’язатись з нами</a>
+				</div>
+				<div class="block-with-title__body-item block-with-title__body-item-premium">
+					<h3 class="block-with-title__body-title">PREMIUM</h3>
+					<button class="btn" type="button">Price</button>
+					<a class="btn" href="#">Зв’язатись з нами</a>
+				</div>
+				<div class="block-with-title__body-item block-with-title__body-item-platinum">
+					<h3 class="block-with-title__body-title">PLATINUM</h3>
+					<button class="btn" type="button">Price</button>
+					<a class="btn" href="#">Зв’язатись з нами</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="block-with-title">
+		<div class="container">
+			<div class="block-with-title__top">
+				<h1 class="block-with-title__title">ДЕТЕЙЛІНГ</h1>
+				<p class="block-with-title__subtitle">
+					Оберіть пакет послуг
+				</p>
+			</div>
+			<div class="block-with-title__body">
+				<div class="block-with-title__body-item block-with-title__body-item-stage1">
+					<h3 class="block-with-title__body-title">Stage 1</h3>
+					<a class="btn" href="#">Зв’язатись з нами</a>
+				</div>
+				<div class="block-with-title__body-item block-with-title__body-item-stage2">
+					<h3 class="block-with-title__body-title">Stage 2</h3>
+					<a class="btn" href="#">Зв’язатись з нами</a>
+				</div>
+				<div class="block-with-title__body-item block-with-title__body-item-stage3">
+					<h3 class="block-with-title__body-title">Stage 3</h3>
+					<a class="btn" href="#">Зв’язатись з нами</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="block-with-title">
+		<div class="container">
+			<div class="block-with-title__top">
+				<h1 class="block-with-title__title">ПОКЛЕЙКА ПЛІВКИ</h1>
+				<p class="block-with-title__subtitle">
+					Оберіть пакет послуг
+				</p>
+			</div>
+			<a class="btn block-with-title__button" href="#">Зв’язатись з нами</a>
+		</div>
+	</section>
+
+</body>
+</html>
