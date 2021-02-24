@@ -8,7 +8,7 @@
 }
 @font-face {
 	font-family: 'Supermolot';
-	src: url('.../fonts/Supermolot-Light.eot');
+	src: url('../fonts/Supermolot-Light.eot');
 	src: local('☺'), url('../fonts/Supermolot-Light.woff') format('woff'), url('../fonts/Supermolot-Light.ttf') format('truetype'), url('../fonts/Supermolot-Light.svg') format('svg'), url('../fonts/Supermolot-Light.otf') format('otf');
 	font-weight: 300;
 	font-style: normal;
@@ -23,7 +23,7 @@
 @font-face {
 	font-family: 'Supermolot';
 	src: url('../fonts/Supermolot-BoldItalic.eot');
-	src: local('☺'), url('.../fonts/Supermolot-BoldItalic.woff') format('woff'), url('../fonts/Supermolot-BoldItalic.ttf') format('truetype'), url('../fonts/Supermolot-BoldItalic.svg') format('svg'), url('../fonts/Supermolot-BoldItalic.otf') format('otf');
+	src: local('☺'), url('../fonts/Supermolot-BoldItalic.woff') format('woff'), url('../fonts/Supermolot-BoldItalic.ttf') format('truetype'), url('../fonts/Supermolot-BoldItalic.svg') format('svg'), url('../fonts/Supermolot-BoldItalic.otf') format('otf');
 	font-weight: 700;
 	font-style: italic;
 }
@@ -230,6 +230,7 @@ body.lock {
 	text-align: center;
 	flex: 0 1 20%;
 	min-width: 220px;
+	/* box-shadow: -5px 5px 10px rgba(7, 7, 7, 0.2), 5px -5px 10px rgba(7, 7, 7, 0.2), -5px -5px 10px rgba(27, 27, 27, 0.9), 5px 5px 13px rgba(7, 7, 7, 0.9), inset 1px 1px 2px rgba(27, 27, 27, 0.3), inset -1px -1px 2px rgba(7, 7, 7, 0.5); */
 }
 .sublist__link {
 	display: block;
@@ -238,10 +239,11 @@ body.lock {
 	background: rgba(40,42,50,0.4);
 	height: 151px;
 	overflow: hidden;
+	box-shadow: -5px 5px 5px rgba(7, 7, 7, 0.2), 5px -5px 10px rgba(7, 7, 7, 0.2), -5px -5px 10px rgba(27, 27, 27, 0.9), 5px 5px 13px rgba(7, 7, 7, 0.9), inset 1px 1px 2px rgba(27, 27, 27, 0.3), inset -1px -1px 2px rgba(7, 7, 7, 0.5);
 }
 .sublist__link img {
 	width: calc(100% - 30px);
-	max-height: 110px;
+	height: 110px;
 	object-fit: cover;
 	margin: 0px 0px 10px 0px;
 	transition: all 0.3s ease;
@@ -630,9 +632,10 @@ body.lock {
 	line-height: 17px;
 }
 .work__items {
-	max-width: 830px;
+	max-width: 850px;
 	margin: 0 auto;
 	display: grid;
+	column-gap: 160px;
 	row-gap: 100px;
 	text-align: center;grid-template-rows: repeat(2, auto);
 	grid-auto-rows: auto;
@@ -649,7 +652,7 @@ body.lock {
 	justify-content: space-between;
 }
 .work__item-image {
-	max-height: 85px;
+	max-height: 80px;
 	margin: 0px 0px 18px 0px;
 }
 .we-work-right-text__title {
@@ -801,6 +804,10 @@ body.lock {
 	.block-with-title__body-item {
 		padding: 39px 34px 19px 34px;
 		border-radius: 7px;
+	}
+	.work__items {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
 	}
 }
 @media(max-width: 991px) {
@@ -989,10 +996,6 @@ body.lock {
 		width: 20px;
 		height: 20px;
 		margin: 0px 0px 10px 0px;
-	}
-	.work__items {
-		grid-template-columns: 1fr 1fr;
-		column-gap: 20px;
 	}
 	.block-with-title__title {
 		font-size: 46px;
