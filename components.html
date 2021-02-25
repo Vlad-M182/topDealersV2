@@ -12,13 +12,13 @@
 		В секціях "left-text", "right-text" щоб змінити картинку потрібно:
 		1. для "left-text" або "right-text" і "left-text__img-shell" або "right-text__img-shell" відповідно добавити клас модифікатор ("main-car" не використовувати бо на головній сторінці пропаде картинка)
 		2. для нового класу добавити в стилі наступний стиль (прописати шлях до картинки з css файла):
-			- якщо картинка має бути ЗПРАВА від тексту "background: radial-gradient(at right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%), url("../images/block/2.png") right no-repeat;"
-			- якщо картинка має бути ЗЛІВА від тексту "background: radial-gradient(at left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%), url("../images/block/3.png") left no-repeat;"
+			- якщо картинка має бути ЗПРАВА від тексту "background: radial-gradient(ellipse 2000px 90% at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/1.png") right no-repeat;"
+			- якщо картинка має бути ЗЛІВА від тексту "background: radial-gradient(ellipse 2000px 90% at left center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 43%), url("../images/block/2.png") left no-repeat;"
 		3. для блока 
 			-"left-text__img-shell" добавити наступний стиль 
-			"background: radial-gradient(ellipse at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/3.png") center no-repeat;"
+			"background: radial-gradient(ellipse 800px 600px at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/1mob.png") center no-repeat;"
 			-"right-text__img-shell" добавити наступний стиль
-			"background: radial-gradient(ellipse at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/2.png") center no-repeat;"
+			"background: radial-gradient(ellipse 800px 600px at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/2.png") center no-repeat;"
 		(ці блоки мають з'являтися на ширинах екрана до 767px)
 
 		Для прикладу є три такі блоки, якщо вони не треба то з файла стилів "style.css" видалити зайві стилі (вони помічені так: /*.black-car .white-car видалити*/)

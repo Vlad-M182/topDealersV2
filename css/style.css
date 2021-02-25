@@ -379,7 +379,7 @@ body.lock {
 	padding-top: 50px;
 }
 .main-car {
-	background: radial-gradient(ellipse 2000px 750px at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/1.png") right no-repeat;
+	background: radial-gradient(ellipse 2000px 90% at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/1.png") right no-repeat;
 }
 .left-text__body, .right-text__body {
 	min-height: 675px;
@@ -903,19 +903,19 @@ body.lock {
 селектори з work якщо не треба також видалити
 */
 .red-car {
-	background: radial-gradient(ellipse 2000px 750px at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/1.png") right no-repeat;
+	background: radial-gradient(ellipse 2000px 90% at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/1.png") right no-repeat;
 }
 .black-car {
-	background: radial-gradient(ellipse 2000px 750px at left center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 43%), url("../images/block/2.png") left no-repeat;
+	background: radial-gradient(ellipse 2000px 90% at left center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 43%), url("../images/block/2.png") left no-repeat;
 }
 .white-car {
-	background: radial-gradient(ellipse 1800px 750px at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/3.png") right no-repeat;
+	background: radial-gradient(ellipse 1800px 90% at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/3.png") right no-repeat;
 }
 .we-work1 {
-	background: radial-gradient(at left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%), url("../images/block/we-work1.png") left no-repeat;
+	background: radial-gradient(ellipse 2000px 90% at left center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 43%), url("../images/block/we-work1.png") left no-repeat;
 }
 .we-work2 {
-	background: radial-gradient(at right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%), url("../images/block/we-work2.png") right no-repeat;
+	background: radial-gradient(ellipse 2000px 90% at right center, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%), url("../images/block/we-work2.png") right no-repeat;
 }
 /*======================*/
 @media(max-width: 767px) {
@@ -1014,10 +1014,10 @@ body.lock {
 		background: radial-gradient(ellipse 800px 600px at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/3.png") center no-repeat;
 	}
 	.we-work1 {
-		background: radial-gradient(ellipse at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/we-work1.png") center no-repeat
+		background: radial-gradient(ellipse 800px 600px at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/we-work1.png") center no-repeat;
 	}
 	.we-work2 {
-		background: radial-gradient(ellipse at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/we-work2.png") center no-repeat;
+		background: radial-gradient(ellipse 800px 600px at bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 90%), url("../images/block/we-work2.png") center no-repeat;
 	}
 }
 @media(max-width: 480px) {
